@@ -1,4 +1,10 @@
+/*
+* Author: Prasith Lakshan - 2015
+*/
+
 var n = 0;
+
+// this array contains the descriptions loaded into the view on button clicks
 var content = [];
 content[0] = "<p>Most modern processors work on fetch-decode-execute principle. This is also called Von Neumann Architecture.</p>When a set of instructions is to be executed, the instructions and data are loaded in main memory. The address of the first instruction is copied into the program counter. The execution of an instruction by a processor is divided in three parts. These parts are fetching, decode and execute.";
 content[1] = "<p><strong>1. Fetch</strong></p><p>First step the CPU carries out is to fetch some data and instructions (program) from main memory then store them in its own internal temporary memory areas. These memory areas are called 'registers'.</p><p> The CPU places the address of the next item to be fetched on to the address bus. </p><p>Data from this address then moves from main memory into the CPU. </p><p>You could imagine that it is a bit like a boat attendant at a lake calling in customers when their time is up -- &quot;Boat number 3, time to come in!&quot; The 'address' of the boat is 3 and the 'data' is its content. The boat is parked at a pier, which is like the internal register of the CPU. </p>";
@@ -26,7 +32,8 @@ content[22] = "<p>This instruction means, 'store the value in AC to memory addre
 content[23] = "<p>This idea of the Fetch-Decode-Execute cycles is what enabled the early researchers to build programmable computers. And it has helped computers become faster and faster and helped us to run many programmes in the same computer.</p><p>We hope you now understand what Fetch-Decode-Execute cycle is, and how it help a programme to run. Please note that the model we used is a very simplified one and also the programme instructions. But as noted earlier basic principles are the same.</p><p></p>";
 content[24] = "<p>You have finished the lessons!</p><p>Press 'Restart' to go back to the start page.</p>";
 
-
+// this array holds the titles of each view
+// content of this array and 'content' array are linked by the index value
 var head = [];
 head[0] = "Introduction";
 head[5] = "Example Programme"
@@ -46,33 +53,25 @@ head[22] = "Last Decode-Execute Phase";
 head[23] = "Note"
 head[24] = "";
 
+
 $(document).ready(function(){ 
-	  $('#start-button').click(function() {
-	   $(".right-images").attr("src",'./images/0.jpg');
-       $('.sidebar-content').html(content[0]);
-	   $('.sidebar-title').html(head[0]);
-	   $('#intro-slide').toggle();
-	   $('#rpl').fadeOut();
-	   $('.sidebar').fadeIn('slow');
-	   $('.pictures').fadeIn('slow');
-	   $('.buttons').fadeIn('slow');
-	   $('.buttons1').fadeTo('fast', 0.7);
-   }); 
-	
-	$('#start-button').mouseenter(function() {
-        $(this).fadeTo('fast', 1);
-	});
-	$('#start-button').mouseleave(function() {
-        $(this).fadeTo('fast', 0.7);
-    });
-	
-	$('.buttons1').mouseenter(function() {
-        $(this).fadeTo('fast', 1);
-    });
-    $('.buttons1').mouseleave(function() {
-        $(this).fadeTo('fast', 0.7);
-    });
-	
+	// when 'start' button is clicked
+	$('#start-button').click(function() {
+		// load the image and the content
+		$(".right-images").attr("src",'./images/0.jpg');
+		$('.sidebar-content').html(content[0]);
+		$('.sidebar-title').html(head[0]);
+		// hide the div with start page content
+		$('#intro-slide').toggle();
+		// transition animations
+		$('#rpl').fadeOut();
+		$('.sidebar').fadeIn('slow');
+		$('.pictures').fadeIn('slow');
+		$('.buttons').fadeIn('slow');
+		$('.buttons1').fadeTo('fast', 0.7);
+   	}); 
+
+	// on restart button click, the intro view is loaded again
 	$('#restart-button').click(function() {
 		$('.pictures').toggle();
 		$('.sidebar').toggle();
@@ -82,33 +81,32 @@ $(document).ready(function(){
 		n = 0;
 	});
 	
+	
 	$('#next-button').click(function() {
 		n = n+1;
 		if (n < 25) {
-		var con = content[n];
-		var hea = head[n];
-		var img = './images/'+n+'.jpg';
-		$(".right-images").attr("src", img);
-		//$('.right-images').fadeOut('fast');
-		//$('.right-images').fadeIn('fast');
-		$('.sidebar-title').html(hea);
-		$('.sidebar-content').html(con);
-		return false;
+			var con = content[n];
+			var hea = head[n];
+			var img = './images/'+n+'.jpg';
+			$(".right-images").attr("src", img);
+			$('.sidebar-title').html(hea);
+			$('.sidebar-content').html(con);
+			return false;
 		} else {
 			n = 24;
 		}
-		});
+	});
 	
 	$('#back-button').click(function() {
 		n = n-1;
 		if (n >= 0){		
-		var con = content[n];
-		var hea = head[n];
-		var img = './images/'+n+'.jpg';
-		$(".right-images").attr("src",img);
-		$('.sidebar-title').html(hea);
-		$('.sidebar-content').html(con);
-		return false;
+			var con = content[n];
+			var hea = head[n];
+			var img = './images/'+n+'.jpg';
+			$(".right-images").attr("src",img);
+			$('.sidebar-title').html(hea);
+			$('.sidebar-content').html(con);
+			return false;
 		} else {
 			n = 0;
 		}

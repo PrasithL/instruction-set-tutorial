@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<!-- saved from url=(0069)file:///C:/Users/User/Desktop/Cover%20Template%20for%20Bootstrap.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="Prasith Lakshan" content="Instruction Processing">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="Prasith Lakshan" content="Instruction Processing">
+	    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Instruction Processing</title>
+	    <title>Instruction Processing</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Bootstrap core CSS -->
+	    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="./css/cover.css" rel="stylesheet">
+	    <!-- Custom styles -->
+	    <link href="./css/cover.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./js/ie-emulation-modes-warning.js"></script>
-	  
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
-  <body>
+	<body>
 
     <div class="site-wrapper">
 
@@ -39,36 +36,33 @@
             <h1 class="cover-heading">Instruction Processing</h1>
             <p class="lead" id="intro">A brief introduction to the Fetch-Decode-Execution cycle using a simplified model of a processor.</p>
             <p class="lead">
-              <a class="btn btn-lg btn-default" id="start-button" style="opacity: 0.7;">Start</a>
+              <button class="btn btn-lg btn-primary" id="start-button" >Start</button>
             </p>
           </div>
 		  
 		 <div class="lesson">
 		  <div class="sidebar" style="display: none;">
 			<p class="sidebar-title">Introduction</p>
-			<div class="sidebar-content"><p>Most modern processors work on fetch-decode-execute principle. This is also called Von Neumann Architecture.</p>When a set of instructions is to be executed, the instructions and data are loaded in main memory. The address of the first instruction is copied into the program counter. The execution of an instruction by a processor is divided in three parts. These parts are fetching, decode and execute.</div>
+			<div class="sidebar-content">
+				<p>Most modern processors work on fetch-decode-execute principle. This is also called Von Neumann Architecture.</p>
+				When a set of instructions is to be executed, the instructions and data are loaded in main memory. The address of the first instruction is copied into the program counter. The execution of an instruction by a processor is divided in three parts. These parts are fetching, decode and execute.
+			</div>
 		  
 		  <div class="pictures" style="display: none;">
 				<img src="./images/0.jpg" class="right-images">
 		  </div>
 		 </div>
 		 <div class="buttons" style="display: none;">
-			<a class="buttons1" id="restart-button" style="opacity: 0.7;">Restart</a>
-			<a class="buttons1" id="back-button" style="opacity: 0.7;">Back</a>
-			<a class="buttons1" id="next-button" style="opacity: 0.7;">Next</a>
+		 	<button class="btn btn-primary" id="back-button" style="opacity: 0.7;">&#8678; Back</button>
+			<button class="btn btn-info" id="restart-button" style="opacity: 0.7;">Restart</button>
+			<button class="btn btn-primary" id="next-button" style="opacity: 0.7;">Next &#8680;</button>
 		 </div>
-			
-          <div class="mastfoot">
-		  
-            <div class="inner">
-              <p id="rpl" style="display: block;">by Prasith Lakshan</p>
-            </div>
-          </div>
 
         </div>
 
       </div>
 
+    </div>
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -76,11 +70,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/docs.min.js"></script>
+
     <!-- main js file -->
     <script src="./js/trans.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./js/ie10-viewport-bug-workaround.js"></script>
   
 
-<div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;">      <div style="display: block; cursor: pointer; text-align: center; width: 100%; height: 100%; top: auto; left: auto; position: static;"><div style="-webkit-transition: opacity 150ms ease-out; transition: opacity 150ms ease-out; text-align: left; opacity: 0.25; border: 1px solid rgb(0, 0, 0); width: 100%; height: 100%; background-image: url(chrome-extension://gofhjkjmkpinhpoiabjplobcaignabnl/icon_play.png); background-color: rgba(193, 217, 244, 0.498039); background-repeat: no-repeat;"></div></div><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%" style="display: none !important;">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1420872973217">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <div style="display: block; cursor: pointer; text-align: center; width: 100%; height: 100%; top: auto; left: auto; position: static;"><div style="-webkit-transition: opacity 150ms ease-out; transition: opacity 150ms ease-out; text-align: left; opacity: 0.25; border: 1px solid rgb(0, 0, 0); width: 100%; height: 100%; background-image: url(chrome-extension://gofhjkjmkpinhpoiabjplobcaignabnl/icon_play.png); background-color: rgba(193, 217, 244, 0.498039); background-repeat: no-repeat;"></div></div><embed src="/assets/flash/ZeroClipboard.swf?noCache=1420872973217" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit" style="display: none !important;">                </object></div><iframe allowtransparency="true" frameborder="0" id="abs-top-frame" src="./Instruction_Processing_files/top.html" style="position: fixed; z-index: 4294967295; overflow: hidden; top: 0px; left: 0px; right: 0px; width: 0px; height: 0px; max-height: none; min-height: 0px; margin: 0px auto; padding: 0px; border: 0px; display: none; background-color: transparent;"></iframe></div></body></html>
+	</body>
+</html>
