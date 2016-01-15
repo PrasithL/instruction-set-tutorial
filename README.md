@@ -1,3 +1,3 @@
 # Instruction Set Architecture Tutorial
-This tutorial introduces how the fetch-decode-execute cycle works.
-This tutorial can be accessed [here](Dreikur.github.io).
+* This tutorial introduces how the fetch-decode-execute cycle works.
+* You can view the tutorial from [here](prasithl.github.io).
