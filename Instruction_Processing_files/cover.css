@@ -1,0 +1,287 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+#intro {
+  color: grey;
+}
+.inner cover
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+/*
+* Sidebar
+*/
+
+.sidebar {
+				width: 400px;
+				height: 500px;
+				
+				/* border: 1px solid black; */
+				border-radius: 0px;
+				position: relative;
+				top: 0px;
+				left: -160px;
+				padding:0px;
+				display: none;
+				
+				
+				
+			}
+
+.sidebar-content {
+				width: 398px;
+				height: 460px;
+				background-color: #d4d4d4;
+				color: #444444;
+				overflow: auto;
+				text-shadow: none;
+				padding: 20px;
+				padding-top: 20px;
+				font-family: calibri;
+				font-size: 1.2em;
+				text-align: justify;
+}
+			
+.sidebar-title {
+				width: 398px;
+				height: 40px;
+				background-color: grey;
+				color: white;
+				padding: 10px;
+				z-index: 1;
+				/*border-bottom: 1px solid black; */
+				border-top-left-radius:4px;
+				border-top-right-radius:4px;
+				color: #444444;
+				font-size: 1.4em;
+				text-shadow: none;
+				
+}
+
+/*
+* Pictures Area
+*/
+
+.pictures {
+				width: 600px;
+				height: 510px;
+				background-color: white;
+				position: relative;
+				top: -510px;
+				left: 450px;
+				border-radius:3px;
+				display: none;
+				
+}
+
+.buttons1 {
+				background-color: grey;
+				padding: 10px;
+				border-radius:3px;
+				text-decoration: none;
+				cursor:pointer;
+				margin: 20px;
+				font-family: verdana;
+				-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 3px 0px #000;
+        -moz-box-shadow: 0px 3px 0px #000;
+        box-shadow: 0px 3px 0px #000;
+				
+				
+}
+
+a:hover {
+				text-decoration: none;
+}
+
+.buttons {
+				position:relative;
+				left:-170px;
+				top: 35px;
+				display: none;
+				width:398px;
+				z-index: 1;
+}
+
+#start-button {
+				opacity: 0.7;
+}
+
+.right-images {
+				max-height: 480px;
+				max-width: 550px;
+				position: relative;
+				top: 15px;
+}
+
+.buttons1:active{
+	 -webkit-box-shadow: 0px 1px 0px #000;
+    -moz-box-shadow: 0px 1px 0px #000;
+    box-shadow: 0px 1px 0px #000;
+	position:relative;
+    top:1px; 
+	
+	
+}
+
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
